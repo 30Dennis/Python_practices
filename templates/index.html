@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myhomepage</title>
+</head>
+<body>
+
+<h2>This is my first page</h2>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut cumque, deleniti dicta distinctio eius fugit hic modi neque omnis praesentium provident quam quibusdam reiciendis reprehenderit totam ut vero voluptatum?</span><span>Accusantium fuga iste laboriosam! Adipisci atque doloremque et eveniet ex expedita explicabo, harum ipsum neque, nisi nostrum pariatur perferendis porro reprehenderit rerum saepe voluptate? Atque doloremque earum quisquam ratione veritatis.</span><span>Aliquid beatae blanditiis cupiditate dolore doloribus earum eius est exercitationem facilis fuga fugiat fugit, hic ipsa iste magni minus nesciunt optio perspiciatis possimus quas quia recusandae repellat tempore vel veritatis!</span><span>Architecto aut debitis ipsum nostrum officiis quidem quisquam, soluta! Deleniti dolorem et nam quae rem repellat suscipit tempore voluptas! Assumenda consectetur dolorum earum ex exercitationem maxime, nisi quidem ratione repellendus.</span><span>Consequuntur cumque nam nobis numquam quos soluta unde? Adipisci animi atque earum esse in inventore, magnam maxime minima molestias neque quod reprehenderit, sed sint tenetur veniam vitae, voluptates. Sit, voluptatem.</span><span>Accusamus animi asperiores atque consectetur dolor eligendi, eos est eum eveniet facere incidunt ipsum iusto nisi nulla provident quo reiciendis rem repellat repudiandae rerum saepe sit suscipit temporibus voluptate voluptatem?</span><span>Accusantium asperiores dolorum in ipsa quis vero. A architecto aspernatur consequatur eius impedit ipsum, minima placeat repellat rerum sed. Cumque earum ipsa mollitia natus nihil odio pariatur saepe, sed vitae?</span><span>Ab, aliquid animi asperiores atque consectetur cumque dicta distinctio dolorum ducimus eaque, enim, ex excepturi expedita facere fugiat id iure molestias necessitatibus quae quam qui quidem rerum sed suscipit velit.</span></p>
+<img src="{% static 'img/girls.jpg' %}" alt="" height="300px" width="300px">
+<img src="{% static 'img/graduation.jpg' %}" alt="" height="300px" width="300px">
+
+{#linking one page to another#}
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'index' %}">Home</a>
+<a href="{% url 'contactus' %}">Contact Us</a>
+<a href="{% url 'design' %}">about</a>
+
+</body>
+</html>
